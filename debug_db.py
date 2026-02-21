@@ -2,7 +2,7 @@ import sqlite3
 
 def check_db():
     try:
-        conn = sqlite3.connect('backend/sentinelnet.db')
+        conn = sqlite3.connect('backend/cyberlock.db')
         cursor = conn.cursor()
         print("--- SCHEMA ---")
         cursor.execute("PRAGMA table_info(messages)")

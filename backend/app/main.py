@@ -40,9 +40,9 @@ async def lifespan(app: FastAPI):
             # Create Default User for Vercel Demo
             db = SessionLocal()
             try:
-                if not db.query(User).filter(User.email == "admin@sentinel.net").first():
+                if not db.query(User).filter(User.email == "admin@cyberlock.ai").first():
                     user = User(
-                        email="admin@sentinel.net",
+                        email="admin@cyberlock.ai",
                         hashed_password=security.get_password_hash("admin"),
                         full_name="Commander Shepard",
                         role="admin",
@@ -66,7 +66,7 @@ async def lifespan(app: FastAPI):
     # Shutdown logic (if any)
 
 
-app = FastAPI(title="SentinelNet API", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title="CyberLock AI API", version="1.0.0", lifespan=lifespan)
 
 @app.exception_handler(Exception)
 async def debug_exception_handler(request: Request, exc: Exception):
@@ -91,7 +91,7 @@ app.include_router(api_router, prefix="/api/v1")
 @app.get("/")
 def read_root():
     return {
-        "message": "SentinelNet Secure Gateway Active",
+        "message": "CyberLock AI Secure Gateway Active",
         "env": "Vercel",
         "tables": list(Base.metadata.tables.keys()),
         "db_url_masked": str(engine.url)[:15] + "..."

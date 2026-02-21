@@ -6,7 +6,7 @@ BASE_URL = "http://localhost:8000/api/v1"
 def test_system():
     # 1. Login (or Register if needed)
     print("1. Authenticating...")
-    email = "admin@sentinel.net"
+    email = "admin@cyberlock.ai"
     password = "password"
     
     # Try login

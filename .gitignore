@@ -19,6 +19,6 @@ dist/
 *.log
 # *.sqlite <-- Commented out
 # *.db     <-- Commented out
-# sentinelnet.db <-- Commented out
+# cyberlock.db <-- Commented out
 .DS_Store
 .vscode/

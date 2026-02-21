@@ -13,10 +13,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SentinelNet | AI-Defended Secure Communication",
+  title: "CyberLock AI | Secure Communication Platform",
   description: "Defense-grade communication platform with AI threat intelligence, end-to-end encryption, and real-time OPSEC monitoring.",
   keywords: ["secure communication", "threat intelligence", "encryption", "OPSEC", "AI security"],
-  authors: [{ name: "SentinelNet" }],
+  authors: [{ name: "CyberLock AI" }],
   icons: {
     icon: "/favicon.ico",
   },

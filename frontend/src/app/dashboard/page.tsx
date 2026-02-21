@@ -91,7 +91,7 @@ export default function Dashboard() {
                                 <Shield className="w-6 h-6 text-slate-900" />
                             </div>
                             <div>
-                                <span className="font-bold text-white text-lg">SENTINEL<span className="text-teal-400">.NET</span></span>
+                                <span className="font-bold text-white text-lg">CYBERLOCK<span className="text-teal-400"> AI</span></span>
                                 <div className="text-[10px] text-slate-500">HQ COMMAND CENTER</div>
                             </div>
                         </div>

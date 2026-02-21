@@ -22,7 +22,7 @@ export default function Home() {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-500 to-emerald-500 flex items-center justify-center shadow-lg shadow-teal-500/20">
               <Shield className="w-6 h-6 text-slate-900" />
             </div>
-            <span className="font-mono font-bold text-teal-400 text-lg tracking-wider">SENTINEL<span className="text-white">.NET</span></span>
+            <span className="font-mono font-bold text-teal-400 text-lg tracking-wider">CYBERLOCK<span className="text-white"> AI</span></span>
           </div>
           <div className="flex items-center gap-2">
             <div className="hidden md:flex items-center gap-1 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
@@ -152,7 +152,7 @@ export default function Home() {
       <footer className="mt-24 pb-8 z-10 text-center">
         <div className="flex items-center justify-center gap-2 text-slate-600 text-sm font-mono">
           <Radio className="w-4 h-4 animate-pulse text-teal-500" />
-          <span>SENTINEL.NET v2.0 // CLASSIFIED SYSTEM // AUTHORIZED ACCESS ONLY</span>
+          <span>CYBERLOCK AI v2.0 // CLASSIFIED SYSTEM // AUTHORIZED ACCESS ONLY</span>
         </div>
       </footer>
     </main>

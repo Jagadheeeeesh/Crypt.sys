@@ -447,7 +447,7 @@ export function ChatInterface() {
                             <Shield className="w-5 h-5 text-slate-900" />
                         </div>
                         <div>
-                            <h2 className="font-bold text-white text-lg">SENTINEL</h2>
+                            <h2 className="font-bold text-white text-lg">CYBERLOCK</h2>
                             <div className="text-[10px] text-slate-500 flex items-center gap-1">
                                 <Lock className="w-3 h-3" /> ENCRYPTED
                             </div>
@@ -623,7 +623,7 @@ export function ChatInterface() {
                 <div className="p-4 border-t border-slate-800">
                     <div className="flex items-center gap-2 text-[10px] text-slate-600">
                         <Radio className="w-3 h-3 text-teal-500 animate-pulse" />
-                        <span>SENTINEL v2.0 • E2E Encrypted</span>
+                        <span>CYBERLOCK AI v2.0 • E2E Encrypted</span>
                     </div>
                 </div>
             </aside>
@@ -698,7 +698,7 @@ export function ChatInterface() {
                             </div>
                             <h3 className="text-lg font-bold text-slate-400 mb-2">Secure Channel Active</h3>
                             <p className="text-sm text-slate-600 max-w-sm">
-                                All messages are end-to-end encrypted and scanned by AI Sentinel for threats.
+                                All messages are end-to-end encrypted and scanned by CyberLock AI for threats.
                             </p>
                         </div>
                     )}
@@ -926,7 +926,7 @@ export function ChatInterface() {
                             </select>
                         </div>
                         <span className="flex items-center gap-1.5">
-                            <Brain className="w-3 h-3 text-purple-500" /> AI SENTINEL ACTIVE
+                            <Brain className="w-3 h-3 text-purple-500" /> CYBERLOCK AI ACTIVE
                         </span>
                     </div>
                 </div>

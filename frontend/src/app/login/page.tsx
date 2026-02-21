@@ -88,7 +88,7 @@ function LoginForm() {
                     <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-500 flex items-center justify-center shadow-lg shadow-teal-500/30">
                         <Shield className="w-8 h-8 text-slate-900" />
                     </div>
-                    <h1 className="text-2xl font-bold text-white tracking-wide">SENTINEL ACCESS</h1>
+                    <h1 className="text-2xl font-bold text-white tracking-wide">CYBERLOCK ACCESS</h1>
                     <p className="text-slate-500 text-sm mt-2">Secure Gateway Authentication</p>
                 </div>
 
@@ -122,7 +122,7 @@ function LoginForm() {
                             <input
                                 type="email"
                                 required
-                                placeholder="agent@sentinel.net"
+                                placeholder="agent@cyberlock.ai"
                                 className="input-field pl-12"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
@@ -179,7 +179,7 @@ function LoginForm() {
                 <div className="mt-6 text-center text-xs text-slate-600 border-t border-slate-800 pt-6">
                     <div className="flex items-center justify-center gap-2 mb-2">
                         <Shield className="w-3 h-3" />
-                        <span>Protected by AI Sentinel</span>
+                        <span>Protected by CyberLock AI</span>
                     </div>
                     <span>Unauthorized access is actively monitored and logged.</span>
                 </div>

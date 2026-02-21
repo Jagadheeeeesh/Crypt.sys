@@ -157,7 +157,7 @@ export default function RegisterPage() {
                             className="input-field"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            placeholder="officer@sentinel.net"
+                            placeholder="officer@cyberlock.ai"
                         />
                     </div>
 

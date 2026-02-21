@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sentinel: {
+        cyberlock: {
           dark: "#0f172a", // slate-900
           darker: "#020617", // slate-950
           primary: "#2dd4bf", // teal-400

@@ -4,7 +4,7 @@ import time
 def fix_db():
     print("Attempting to patch database schema...")
     try:
-        conn = sqlite3.connect('backend/sentinelnet.db', timeout=10) # Wait up to 10s for lock
+        conn = sqlite3.connect('backend/cyberlock.db', timeout=10) # Wait up to 10s for lock
         cursor = conn.cursor()
         
         columns = [

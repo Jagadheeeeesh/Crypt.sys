@@ -1,7 +1,7 @@
 import sqlite3
 
 def fix_channels():
-    conn = sqlite3.connect('backend/sentinelnet.db')
+    conn = sqlite3.connect('backend/cyberlock.db')
     cursor = conn.cursor()
     
     print("Fixing NULL channel_ids...")

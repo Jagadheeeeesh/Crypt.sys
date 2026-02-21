@@ -82,7 +82,7 @@ elif os.getenv("VERCEL"):
 else:
     # Local Development: File-based SQLite
     try:
-        base_filename = "sentinelnet.db"
+        base_filename = "cyberlock.db"
         DATABASE_URL = f"sqlite:///./{base_filename}"
         engine = create_engine(
             DATABASE_URL, connect_args={"check_same_thread": False}

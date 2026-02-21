@@ -35,9 +35,9 @@ def reset_database():
     print("Creating default admin user...")
     db = SessionLocal()
     try:
-        if not db.query(User).filter(User.email == "admin@sentinel.net").first():
+        if not db.query(User).filter(User.email == "admin@cyberlock.ai").first():
             user = User(
-                email="admin@sentinel.net",
+                email="admin@cyberlock.ai",
                 hashed_password=security.get_password_hash("admin"),
                 full_name="Commander Shepard",
                 role="admin",
@@ -45,7 +45,7 @@ def reset_database():
             )
             db.add(user)
             db.commit()
-            print("Default user 'admin@sentinel.net' created.")
+            print("Default user 'admin@cyberlock.ai' created.")
         else:
             print("Default user already exists.")
     except Exception as e:
