@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Shield, Lock, Eye, AlertTriangle, UserPlus, Zap, Radio, Activity, ChevronRight, Cpu, Fingerprint } from "lucide-react";
+import { Shield, Lock, Eye, UserPlus, Activity, ChevronRight, Cpu, Fingerprint } from "lucide-react";
 
 export default function Home() {
   return (
@@ -42,13 +42,6 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative flex place-items-center z-10 mt-20">
         <div className="text-center space-y-8 max-w-3xl">
-          {/* Version Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700 text-sm">
-            <Zap className="w-4 h-4 text-teal-400" />
-            <span className="text-slate-400">Version 2.0</span>
-            <span className="text-teal-400 font-bold">Now with AI Threat Analysis</span>
-          </div>
-
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl font-black tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
@@ -117,107 +110,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Feature Cards */}
-      <div className="grid text-center lg:max-w-6xl lg:w-full lg:grid-cols-3 lg:text-left gap-6 mt-24 z-10 px-4">
-        <FeatureCard
-          title="E2E Encryption"
-          desc="AES-256 + RSA-2048 encryption with forward secrecy. Every session uses rotating keys for maximum protection."
-          icon={<Lock className="w-8 h-8" />}
-          color="teal"
-        />
-        <FeatureCard
-          title="AI Threat Scan"
-          desc="Real-time detection of AI-generated content, deepfakes, and social engineering attempts using transformer models."
-          icon={<Eye className="w-8 h-8" />}
-          color="purple"
-        />
-        <FeatureCard
-          title="OPSEC Guardian"
-          desc="Automated risk assessment prevents sensitive operational data leakage. Blocks high-risk messages in real-time."
-          icon={<AlertTriangle className="w-8 h-8" />}
-          color="rose"
-        />
-      </div>
-
-      {/* Stats Section */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 z-10 max-w-4xl w-full px-4">
-        <StatCard value="256-bit" label="Encryption" />
-        <StatCard value="<100ms" label="Scan Latency" />
-        <StatCard value="99.9%" label="Uptime SLA" />
-        <StatCard value="24/7" label="AI Monitoring" />
-      </div>
-
-      {/* Footer */}
-      <footer className="mt-24 pb-8 z-10 text-center">
-        <div className="flex items-center justify-center gap-2 text-slate-600 text-sm font-mono">
-          <Radio className="w-4 h-4 animate-pulse text-teal-500" />
-          <span>CYBERLOCK AI v2.0 // CLASSIFIED SYSTEM // AUTHORIZED ACCESS ONLY</span>
-        </div>
-      </footer>
     </main>
-  );
-}
-
-function FeatureCard({ 
-  title, 
-  desc, 
-  icon, 
-  color 
-}: { 
-  title: string; 
-  desc: string; 
-  icon: React.ReactNode;
-  color: 'teal' | 'purple' | 'rose';
-}) {
-  const colorClasses = {
-    teal: {
-      icon: "text-teal-400",
-      border: "hover:border-teal-500/50",
-      glow: "group-hover:shadow-teal-500/10",
-      gradient: "from-teal-500/20",
-    },
-    purple: {
-      icon: "text-purple-400",
-      border: "hover:border-purple-500/50",
-      glow: "group-hover:shadow-purple-500/10",
-      gradient: "from-purple-500/20",
-    },
-    rose: {
-      icon: "text-rose-400",
-      border: "hover:border-rose-500/50",
-      glow: "group-hover:shadow-rose-500/10",
-      gradient: "from-rose-500/20",
-    },
-  };
-
-  const c = colorClasses[color];
-
-  return (
-    <div className={`group relative rounded-2xl border border-slate-800 bg-slate-900/50 p-6 transition-all duration-500 ${c.border} hover:bg-slate-800/60 backdrop-blur-sm overflow-hidden hover:scale-[1.02] ${c.glow} hover:shadow-2xl cursor-pointer`}>
-      {/* Gradient overlay on hover */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${c.gradient} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-      
-      <div className="relative flex flex-col items-center lg:items-start">
-        <div className={`${c.icon} mb-4 p-3 rounded-xl bg-slate-800/50 border border-slate-700 group-hover:border-current/30 transition-colors`}>
-          {icon}
-        </div>
-        <h2 className="mb-3 text-xl font-bold text-white group-hover:text-glow transition-all">
-          {title}
-        </h2>
-        <p className="text-sm text-slate-400 leading-relaxed">
-          {desc}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function StatCard({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="stat-card text-center">
-      <div className="text-2xl md:text-3xl font-bold text-teal-400 mb-1">{value}</div>
-      <div className="text-xs text-slate-500 uppercase tracking-wider">{label}</div>
-    </div>
   );
 }
