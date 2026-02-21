@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+websockets
+python-dotenv
+sqlalchemy
+pydantic-settings
+passlib[bcrypt]
+bcrypt
+python-multipart
+python-jose[cryptography]
+httpx
+anyio
+email-validator
+pyjwt
+argon2-cffi
