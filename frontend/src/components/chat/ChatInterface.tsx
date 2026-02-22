@@ -724,6 +724,7 @@ export function ChatInterface() {
                                     ? "bg-gradient-to-br from-teal-950/50 to-teal-900/30 border-teal-500/30 text-teal-50 rounded-br-md"
                                     : "bg-slate-800/60 border-slate-700/50 text-slate-200 rounded-bl-md",
                                 msg.status === 'blocked' ? "!border-rose-500/50 !bg-rose-950/30" : "",
+                                msg.risk?.phishing_risk && msg.risk.phishing_risk !== 'LOW' ? "!border-yellow-500/50 !bg-yellow-950/30" : "",
                                 selectedMessage?.id === msg.id ? "ring-2 ring-purple-500/50 ring-offset-2 ring-offset-slate-950 !border-purple-500/50" : "",
                                 "hover:shadow-xl hover:scale-[1.01]"
                             )}>
@@ -740,6 +741,11 @@ export function ChatInterface() {
                                     {msg.risk?.opsec_risk === 'HIGH' && (
                                         <span className="bg-rose-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-lg flex items-center gap-1">
                                             <AlertTriangle className="w-3 h-3" /> OPSEC
+                                        </span>
+                                    )}
+                                    {msg.risk?.phishing_risk && msg.risk.phishing_risk !== 'LOW' && (
+                                        <span className="bg-yellow-500 text-black text-[10px] font-bold px-2 py-0.5 rounded-full shadow-lg flex items-center gap-1">
+                                            <AlertTriangle className="w-3 h-3" /> PHISHING
                                         </span>
                                     )}
                                     {msg.risk?.ai_score && msg.risk.ai_score > 50 && (
