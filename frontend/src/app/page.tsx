@@ -45,11 +45,11 @@ export default function Home() {
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl font-black tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
-              Defense-Grade
+              AI-Defended
             </span>
             <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-emerald-400 to-teal-500 text-glow">
-              Secure Communication
+              Secure Communication Platform
             </span>
           </h1>
 
